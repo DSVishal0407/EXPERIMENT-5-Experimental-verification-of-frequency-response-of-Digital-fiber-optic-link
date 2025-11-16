@@ -1,32 +1,23 @@
-
-Exp 5 Experimental verification of frequency response of Digital fiber optic link
+# Exp 5 Experimental verification of frequency response of Digital fiber optic link
 # Digital Fiber Optic Link Analysis (600nm)
 
-## AIM
+## AIM:
 To analyze the relationship between input and received signal of a 600nm fiber optic cable using digital link.
 
----
-
-## EQUIPMENTS REQUIRED
+## EQUIPMENTS REQUIRED:
 - Fiber optic trainer kit ST 2502  
 - Power supply  
 - Patch cords  
 - CRO (Cathode Ray Oscilloscope)  
-- 660 nm fiber cable  
+- 660 nm fiber cable
 
----
-
-## THEORY
-
+## THEORY:
 Fiber optic links can be used for transmission of digital as well as analog signals. A fiber optic link typically consists of three main elements:
 - **Transmitter**: Converts the electrical input signal into optical (light) energy.
 - **Optical Fiber**: Serves as the transmission medium for the light signal.
 - **Receiver**: Converts the received light back into an electrical signal, preserving the original signal pattern.
 
----
-
-## PROCEDURE
-
+## PROCEDURE:
 1. Connect the power supply to the board.  
 2. Ensure that all switched faults are set to ‘Off’.  
 3. Make the following connections:  
@@ -39,39 +30,30 @@ Fiber optic links can be used for transmission of digital as well as analog sign
 6. Monitor both the inputs to comparator 1 (TP13 & TP14). Slowly adjust the comparator's bias preset until the DC level on TP13 lies midway between the high and low levels of the signal on TP14.  
 7. Observe the input to emitter 1 (TP5) and the output from AC amplifier 1 (TP28). Verify that both signals are identical.  
 8. Vary the frequency between 10 Hz to 1 MHz and observe the output voltage for a constant input voltage of 5V.  
-9. Calculate the bandwidth by determining the gain in decibels (dB).  
+9. Calculate the bandwidth by determining the gain in decibels (dB).
 
----
+## BLOCK DIAGRAM:
+<img width="619" height="392" alt="DIGITAL" src="https://github.com/user-attachments/assets/91560a3f-5182-40d9-9ebf-55c172b586bb" />
 
-## BLOCK DIAGRAM
-
-*(Insert block diagram here)*
-
----
-
-
-## CONNECTION DIAGRAM  
-**Setting up a Digital Link**
-
-*(Insert connection diagram here)*
-
----
-
-## TABULATION  
-**Transmission through Digital Link**
-
+## TABULATION:
+### Transmission through Digital Link
 | Frequency (Hz) | Output Signal Amplitude (Vo) | Gain = Vo/Vi | Gain in dB |
 |----------------|------------------------------|--------------|------------|
-|                |                              |              |            |
+| 800Hz	        |2.5V                          |	0.5	      |-6.02       |
+|1KHz	           |32V	                        |6.4	         |16.12       |
+|2Khz	           |34V	                        |6.8	         |16.6        |
+|5KHz	           |36V	                        |7.2	         |17.14       |
+|10KHz	        |37V	                        |7.4	         |17.38       |
+|20KHz	        |37V	                        |7.4           |	17.38     |
+|50KHz	        |37V	                         |7.4          |	17.38     |
+|100KHz	|27V	|5.4	|14.64|
+|250KHz	|12.7V	|2.54	|8.09|
 
----
+## MODEL GRAPH:
+<img width="805" height="386" alt="image" src="https://github.com/user-attachments/assets/de990a88-60b9-4530-952f-b25e4cbb9830" />
 
-## MODEL GRAPH
+## GRAPH:
 
-*(Insert model graph here)*
 
----
-
-## RESULT
-
-*(Summarize observations and conclusions here)*
+## RESULT:
+Thus, the frequency response of the digital fiber optic link was successfully verified. The measured bandwidth of the digital fiber optic link is approximately 100 kHz, confirming the expected performance characteristics of digital optical transmission.
